@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <style>
+        body {
+            background-image: url('{% static "CareConnect/images/background2.png" %}');
+            /* Specify the path to your background image */
+            background-size: cover;
+            /* Cover the entire background */
+            margin: 0;
+            /* Remove default body margin */
+            display: flex;
+            /* Use flexbox for layout */
+            justify-content: center;
+            /* Align items horizontally at the center */
+            align-items: center;
+            /* Align items vertically at the center */
+            min-height: 100vh;
+            /* Ensure the body fills the viewport height */
+            font-family: 'Roboto', sans-serif;
+            /* Set Roboto as the font family */
+        }
+
+        .content {
+            display: flex;
+            /* Use flexbox for layout */
+            flex-direction: column;
+            /* Stack items vertically */
+            align-items: center;
+            /* Align items horizontally at the center */
+            margin-top: 20px;
+            /* Adjust top margin as needed */
+        }
+
+        /* Increase the size of the text */
+        h1 {
+            font-size: 36px;
+            /* Adjust font size for the title as needed */
+            position: absolute;
+            /* Position the element absolutely */
+            top: 50px;
+            /* Place the element 50px from the top */
+            left: 50%;
+            /* Align the element horizontally in the middle */
+            transform: translateX(-50%);
+            /* Adjust the position horizontally to center */
+        }
+
+        h2 {
+            font-size: 24px;
+            /* Adjust font size for the subtitle as needed */
+        }
+
+        /* Reduce the size of the image */
+        img {
+            width: 250px;
+            /* Increase the width of the image */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-top: 20px;
+            /* Add margin to the top of the image */
+        }
+
+        /* Add margin to the form */
+        form {
+            margin-top: 20px;
+            /* Adjust the margin as needed */
+        }
+
+        /* Style for input fields */
+        input {
+            margin-bottom: 10px;
+            /* Add spacing between input fields */
+        }
+
+        /* Button styling */
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+            background-color: green;
+            margin-top: 20px;
+            /* Add margin to the button */
+        }
+
+        button:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to CareConnect!</h1>
+    <div class="content">
+        <h2>
+            <p>We'd like to ask you some questions to provide you with better service. Please answer the following:</p>
+        </h2>
+        <form action="chatbot.html" method="get">
+            <div>
+                <label for="age">What is your age?</label>
+                <input id="age" name="age" type="text" placeholder="Age">
+            </div>
+            <div>
+                <label for="gender">What is your gender?</label>
+                <input id="gender" name="gender" type="text" placeholder="Gender">
+            </div>
+            <div>
+                <label for="illness">Do you have any pre-existing illnesses or medical conditions?</label>
+                <input id="illness" name="illness" type="text"
+                    placeholder="Pre-existing illnesses or medical conditions">
+            </div>
+            <div>
+                <label for="medications">Are you currently taking any medications? If yes, please specify.</label>
+                <input id="medications" name="medications" type="text" placeholder="Medications">
+            </div>
+            <div>
+                <label for="surgeries">Have you had any recent surgeries or medical procedures? If yes, please provide
+                    details.</label>
+                <input id="surgeries" name="surgeries" type="text" placeholder="Surgeries or medical procedures">
+            </div>
+            <div>
+                <label for="allergies">Are you allergic to any medications or substances? If yes, please
+                    specify.</label>
+                <input id="allergies" name="allergies" type="text" placeholder="Allergies">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
