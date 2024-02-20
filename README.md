@@ -1,1 +1,3 @@
 # Healthcare_Chatbot
+
+Our project, a multilingual healthcare chatbot, aligns with the UN Sustainable Development Goal 3: Good Health and Well-Being. It addresses the challenge of limited access to reliable health information in underserved communities by providing accurate disease predictions and guidance based on symptoms. Leveraging advanced tools like the BERT Model and Googletrans for translation, our chatbot empowers users with personalized health insights, bridging information gaps and fostering proactive health management. With a user-friendly interface, it promotes universal health coverage and contributes to the goal of ensuring everyone's well-being.
